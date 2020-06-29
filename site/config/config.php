@@ -151,5 +151,10 @@
                 ]
             ]
         ]
-    ]
+    ],
+    'google-oauth' => [
+        // Set the default role of newly created users.
+        'defaultRole' => 'editor',
+    ],
+
 ];
