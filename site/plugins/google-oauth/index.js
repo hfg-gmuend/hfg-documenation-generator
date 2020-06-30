@@ -10,10 +10,6 @@ if (window.panel) {
 
         var updateForm = function () {
             tryCounter++;
-            // override  installation screen to oauth screen
-            if (window.location == window.panel.url + "/installation") {
-                window.location = oauthBasePath;
-            }
 
             var form = document.getElementsByClassName("k-login-form").item(0);
 
@@ -27,7 +23,6 @@ if (window.panel) {
                 }, 200);
                 return;
             }
-            console.log(url);
 
             form.insertAdjacentHTML('beforeend', '<a class="login-btn login-btn-google" href="'+url["redirect"]+'">Mit Google-Konto anmelden</a>');
 
